@@ -22,7 +22,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 		super.paintComponent(g);
 		
 	
-	//loading the images
+	//Fruit Ninja startup 
 	}
 	
 	public static void main(String[] arg) {
@@ -32,7 +32,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 	
 	public Frame() {
 		JFrame f = new JFrame("Duck Hunt");
-		f.setSize(new Dimension(900, 600));
+		f.setSize(new Dimension(900, 900));
 		f.setBackground(Color.blue);
 		f.add(this);
 		f.addMouseListener(this);
@@ -40,9 +40,10 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 		
 		Timer t = new Timer(16, this);
 	
-		t.start();
+		
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);
+		//config code 
 	}
 	
 	
@@ -83,7 +84,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
-		repaint();
+		
 	}
 
 }
