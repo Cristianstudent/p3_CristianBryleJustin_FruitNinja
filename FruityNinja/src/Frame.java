@@ -17,10 +17,12 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 	//Objects that need to be drawn on the JFrame in the paint method.
 	//write the code to create a ground object as one of ur instance variables
 	
+	Watermelon watermelon = new Watermelon();
+	
 	public void paint(Graphics g) {
 		
 		super.paintComponent(g);
-		
+		watermelon.paint(g);
 	
 	//loading the images
 	}
@@ -31,7 +33,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 	}
 	
 	public Frame() {
-		JFrame f = new JFrame("Duck Hunt");
+		JFrame f = new JFrame("Fruity Ninja");
 		f.setSize(new Dimension(900, 600));
 		f.setBackground(Color.blue);
 		f.add(this);
