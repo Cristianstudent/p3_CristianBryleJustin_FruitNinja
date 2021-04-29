@@ -24,7 +24,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 	
 	//Fruit Ninja startup 
 	}
-	
+	//hi
 	public static void main(String[] arg) {
 		Frame f = new Frame();
 		
