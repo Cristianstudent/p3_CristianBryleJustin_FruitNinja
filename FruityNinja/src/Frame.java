@@ -18,11 +18,15 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 	//write the code to create a ground object as one of ur instance variables
 	
 	Watermelon watermelon = new Watermelon();
+	CutWatermelon cutwatermelon = new CutWatermelon();
+	Bomb bomb = new Bomb();
 	
 	public void paint(Graphics g) {
 		
 		super.paintComponent(g);
 		watermelon.paint(g);
+		cutwatermelon.paint(g);
+		bomb.paint(g);
 	
 	//loading the images
 	}
