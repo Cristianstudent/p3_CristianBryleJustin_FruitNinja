@@ -20,10 +20,11 @@ public class Frame extends JPanel implements ActionListener, MouseListener {
 	Watermelon watermelon = new Watermelon();
 	CutWatermelon cutwatermelon = new CutWatermelon();
 	Bomb bomb = new Bomb();
-	
+	Ground foreground = new Ground();
 	public void paint(Graphics g) {
 		
 		super.paintComponent(g);
+		foreground.paint(g);
 		watermelon.paint(g);
 		cutwatermelon.paint(g);
 		bomb.paint(g);
