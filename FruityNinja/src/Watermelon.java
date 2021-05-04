@@ -6,7 +6,7 @@ import java.awt.geom.AffineTransform;
 import java.net.URL;
 
 public class Watermelon {
-	private int x=100, y=-10;
+	private int x, y;
 	private Image img;
 	private AffineTransform tx = AffineTransform.getTranslateInstance(x, y);
 	
